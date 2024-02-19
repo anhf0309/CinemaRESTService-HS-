@@ -85,40 +85,19 @@ files:
     learner_created: false
   - name: build.gradle
     visible: true
-    text: |
-      buildscript {
-          repositories {
-              mavenCentral()
-          }
-          dependencies {
-              classpath "org.springframework.boot:spring-boot-gradle-plugin:$hs.spring.bootVersion"
-              classpath "io.spring.gradle:dependency-management-plugin:$hs.spring.dependencyManagementVersion"
-          }
-      }
-      
-      apply plugin: 'java'
-      apply plugin: 'org.springframework.boot'
-      apply plugin: 'io.spring.dependency-management'
-      
-      repositories {
-          mavenCentral()
-      }
-      
-      sourceSets.main.resources.srcDirs = ["src/resources"]
-      
-      dependencies {
-          implementation 'org.springframework.boot:spring-boot-starter'
-          implementation 'org.springframework.boot:spring-boot-starter-actuator'
-          implementation 'org.springframework.boot:spring-boot-starter-web'
-      }
-      
-      test {
-          jvmArgs '--add-opens', 'java.base/java.lang=ALL-UNNAMED'
-      }
-    learner_created: false
-  - name: src/cinema/Seats.java
+    learner_created: true
+  - name: src/cinema/SeatsResponse.java
+    visible: true
+    learner_created: true
+  - name: src/cinema/Seat.java
+    visible: true
+    learner_created: true
+  - name: src/cinema/SeatsController.java
     visible: true
     learner_created: true
 feedback_link: https://hyperskill.org/projects/189/stages/945/implement#comment
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Mon, 19 Feb 2024 08:08:56 UTC"
 record: -1
